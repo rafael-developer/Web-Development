@@ -1,5 +1,6 @@
 // Cadeia de protótipos (prototype chain)
-Object.prototype.attr0 = '0'
+Object.prototype.attr0 = '0' //não faça isso em casa
+
 const avo = { attr1: 'A'}
 const pai = { __proto__: avo, attr2: 'B', attr3: '3'}
 const filho = { __proto__: pai, attr3: 'C'}
@@ -9,8 +10,8 @@ const carro = {
     velAtual: 0,
     velMax: 200,
     acelerarMais(Delta) {
-        if (this.velAtual + delta <= this.velMax) {
-            this.velAtual += delta
+        if (this.velAtual + Delta <= this.velMax) {
+            this.velAtual += Delta
         } else {
             this.velAtual = this.velMax
         }
