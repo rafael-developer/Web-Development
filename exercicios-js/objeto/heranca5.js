@@ -5,9 +5,12 @@ console.log(typeof Object)
 // Criando função ou method .reverse() na classe String (usou prototype para acessar o protótipo String)
 String.prototype.reverse = function() {
     return this.split('').reverse().join('')
-//  .split('') transforma string em array. função da classe String
-//  .reverse() inverte o array             função da classe Array
-//  .join('')  junta o array em um string  função da classe Array
+
+/*************************************************    
+*  .split('') transforma string em array. função da classe String
+*  .reverse() inverte o array             função da classe Array
+*  .join('')  junta o array em um string  função da classe Array
+**************************************************/
 }
 
 console.log('Escola Cod3r'.reverse())

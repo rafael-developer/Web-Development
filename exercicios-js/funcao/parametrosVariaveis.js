@@ -1,7 +1,8 @@
 function soma() {
     let soma = 0
     for (i in arguments) {
-        soma += arguments[i]
+        soma += arguments[i] // array que recebe os parametros
+        // foi substituido pelo operador Rest Spread
     }
     return soma
 }

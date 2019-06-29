@@ -2,6 +2,7 @@ let dobro = function (a) {
     return 2 * a
 }
 
+//  Pode passar mais de um parametro
 dobro = (a) => {
     return 2 * a
 }
