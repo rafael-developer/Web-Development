@@ -1,5 +1,5 @@
-const moduloA = require('./122moduloA')
-const moduloB = require('./122moduloB')
+const moduloA = require('./122moduloA') //  require(nomeDoModulo)
+const moduloB = require('./122moduloB') //  ./mesmo diretorio ../ sair da pasta
 
 console.log(moduloA)
 console.log(moduloA.ateLogo)
