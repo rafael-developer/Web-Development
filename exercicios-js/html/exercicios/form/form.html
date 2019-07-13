@@ -1,6 +1,7 @@
 <h1>Formulários</h1>
 
-<form action="http://localhost:3003/usuarios" method="POST">
+<form method="POST">
+    <input type="hidden" name="id" value="3">
     <input type="email" name="nome" >
     <input type="password" name="senha">
     <textarea name="bio" id="" cols="30" rows="10"></textarea>
@@ -29,7 +30,8 @@
         <option value="python">Python</option>
     </select>
 
-    <button>Incluir</button>
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
 </form>
 
 <style>
