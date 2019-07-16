@@ -1,13 +1,7 @@
 # Web Development
   ## Front-end
-   ### HTML5
-   ### CSS3
-    > Bootstrap
-   ### Javascript
-    > jQuery
+   HTML5, CSS3, Bootstrap, Javascript, jQuery
   ## Back-end
-   ### NodeJs
-   ### Ajax
+   NodeJs, Ajax
   ## Data-Base
-   ### MySQL Server
-   ### MongoDB
+   MySQL Server, MongoDB
