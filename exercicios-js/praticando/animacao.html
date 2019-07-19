@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Animação</title>
+    <style>
+    
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1e272e; 
+        }
+        .carreg {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(#f53b57,#3c40c6,#0be881);
+            animation-name: animate;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+        }
+
+        .carreg:hover {
+            animation-duration: 1s;
+        }
+        @keyframes animate{
+
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .carreg span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(#3c40c6,#ffd32a,#f53b57);
+        }
+        .carreg span:nth-child(1){
+            filter: blur(6px);
+        }
+        .carreg span:nth-child(2){
+            filter: blur(12px);
+        }
+        .carreg span:nth-child(3){
+            filter: blur(25px);
+        }
+        .carreg span:nth-child(4){
+            filter: blur(50px);
+        }
+        .carreg::after{
+            content: '';
+            position: absolute;
+            top:10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background: #1e272e;
+            border-radius: 50%;
+        }
+
+        .txt {
+            position: fixed;
+            color: #1e272e;
+        }
+
+        .txt:hover{
+            
+            background: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            font-style: inherit;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="carreg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <div class="txt">
+        <p><a>aguarde</a></p>
+    </div>
+</body>
+</html>

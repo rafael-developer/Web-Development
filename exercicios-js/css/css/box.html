@@ -6,13 +6,94 @@
     <title>Box Model</title>
     <style>
         /* ... */
+        body { font-size: 80px; margin: 0; }
+        /*
+        .c1 { background-color: orange; }
+        .c2 { background-color: skyblue; }
+        .c3 { background-color: tomato; }
+        
+        .ex {
+            padding: 50px;
+            margin: 20px;
+            border: solid 15px black;
+        } */
+        .card {
+            background: 
+                radial-gradient(circle at top right, rgba(242, 205,93, 1) 10%, rgba(255,255,255,0)),
+                radial-gradient(circle at top left, rgba(58,23,114,1),rgba(255,255,255,0)),
+                radial-gradient(circle at bottom right, rgba(83,152,190,1), rgba(255,255,255,0)),
+                radial-gradient(circle at bottom left, rgba(97,213,134,1), rgba(255,255,255,0));
+                border: 1px solid rgba(200,200,200,1);
+                border-radius: 12px;
+                box-shadow: 0 12px 18px rgba(0,0,0,.1);
+                height: 200px;
+                width: 300px;
+                margin: 50px;
+                transition-duration: 1s;
+        }
+
+        .card:hover{
+            transition-duration: 1s;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            align-content: center;
+        }
+        .chroma {
+            background: 
+                radial-gradient(circle at top right,    rgba(255, 255,   0,1), rgba(255,255,255,0)),
+                radial-gradient(circle at top left,     rgba(255,   0, 255,1), rgba(255,255,255,0)),
+                radial-gradient(circle at bottom right, rgba(0,   255,   0,1), rgba(255,255,255,0)),
+                radial-gradient(circle at bottom left,  rgba(0,     0, 255,1), rgba(255, 255, 255, 0));
+                border: 1px solid rgba(200,200,200,1);
+                border-radius: 50%;
+                box-shadow: 0 12px 18px rgba(0,0,0,.1);
+                height: 200px;
+                width: 200px;
+                margin: 50px;
+                animation-name: animate;
+                animation-iteration-count: infinite;
+                animation-duration: 1s;
+                animation-timing-function: linear;  
+                transition: duration 10;
+        }
+
+        .chroma:hover {
+            animation-duration: 5s;
+        }
+       
+        @keyframes animate{
+
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                
+            }
+        }
+        .card:hover{
+            
+            background: 
+                radial-gradient(circle at top left,    rgba(255, 255,   0,1), rgba(255,255,255,0)),
+                radial-gradient(circle at bottom left,     rgba(255,   0, 255,1), rgba(255,255,255,0)),
+                radial-gradient(circle at top right, rgba(0,   255,   0,1), rgba(255,255,255,0)),
+                radial-gradient(circle at bottom right,  rgba(0,     0, 255,1), rgba(255, 255, 255, 0));
+            filter: blur(1px);
+        
+        }
+
     </style>
 </head>
 
-<body>
-    <div class="c1">1</div>
-    <div class="c2">2</div>
-    <div class="c3">3</div>
+<body>  
+    <div class="content">
+    <div class="c1 ex">1</div>
+    <div class="c2 ex">2</div>
+    <div class="c3 ex">3</div>
+    </div>  
+    <div class="card"></div>
+    <div class="chroma"></div>    
 </body>
 
 </html>
