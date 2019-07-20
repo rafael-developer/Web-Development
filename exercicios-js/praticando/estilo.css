@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: cornflowerblue;
+}
+.painel {
+    position: absolute;
+    width: 20vw;
+    height: 100%;
+    background-color: darkgray;
+}
