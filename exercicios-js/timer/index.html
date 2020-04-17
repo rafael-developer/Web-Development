@@ -1,56 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
-    <script src="./js/jquery.js"></script>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-    <div class="cronometro">
-        <div id="timer">00:00:00.00</div>
-    </div>
-    
-        <div id="power">
-            <button id="start">START</button>
-            <button id="stop">STOP</button>
-            <button id="restart">RESTART</button>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cronômetro</title>
+
+        <script src="./js/jquery.js"></script>
+        <link rel="stylesheet" href="./style/style.css">
+        
+    </head>
+    <body>
+
+        <div id="container">
+            
+            <div class="cronometro">
+                <div id="timer">00:00:00.00</div>
+            </div>
+            
+            <div id="power">
+                <button id="start">START</button>
+                <button id="restart">RESTART</button>
+            </div>
+            
         </div>
-    <script>
-       
         
-        function calcFormatTimer(count) {
-            
-                let millesimal, seconds, minutes, hours
-                
-                millesimal = ("00" + Math.floor(count % 100)).slice(-2)
-                
-                count /= 100
-                seconds = ("00" + Math.floor(count % 60)).slice(-2)
-                
-                count /= 60
-                minutes = ('00' + Math.floor(count % 60)).slice(-2)
-                
-                count /= 60
-                hours = ('00' + Math.floor(count % 24)).slice(-2)
-            
-            return `${hours}:${minutes}:${seconds}.${millesimal}`
-        }
-        
-        const timer = (acomulador) => {   
-            setInterval(() => {
-
-                $('#timer').text(calcFormatTimer(acomulador))
-                acomulador++
-            }, 10)
-        }
-
-        let count = 0
-
-        timer(count)
-
-    </script>
-    
-</body>
+    <script type="text/javascript" src="./js/temporizador.js"></script>
+    </body>
 </html>
