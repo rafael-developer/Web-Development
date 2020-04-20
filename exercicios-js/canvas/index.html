@@ -56,27 +56,43 @@
             }
             if(mvDown){
                 // border bump
-                if(!((posY + radius) > cnv.height)) 
+                if(!((posY + radius) > cnv.height))
                     posY++;
+
             }
             if(mvLeft){
 
-                if(!(posX < radius)){
+                if(!(posX < radius)) 
+                {
                     posX -= 10;
-                   
-                } else {
+                } 
+                else {
                     mvLeft = false;
                 }
             }
             if(mvRight){
 
-                if(!((posX + radius) > cnv.width)){
+                if(!((posX + radius) > cnv.width))
+                {   
                     posX+= 10;
-
-                } else {
+                } 
+                else {
                     mvRight = false;
-                }
+                } 
             }
+        }
+
+        //Confere colisão e, em caso de colisão, muda a cor do objeto para vermelho
+        function colide() {
+            if  (posX + radius > blockX		//Confere colisão pela direita 
+                && posX - radius < blockX + SIZE 	//Confere colisão pela esquerda
+                && posY + radius > cnv.height - SIZE 	//Confere colisão por cima
+                && posY - radius < cnv.height){	//Confere colisão por baixo
+                    objColor = "#f00";
+            } else {
+                objColor = "#00f";
+            }
+            
         }
         ///////////////////////////////////////////////////////////////////////////
 
@@ -93,30 +109,23 @@
             vy *= .99;
               vy += .25;
 
-            if (posY + vy > cnv.height ||
-                posY + vy < 0) {
+            //colide com objeto
+            if ((posY + vy > cnv.height || posY + vy < 0) || 
+                (posX + radius > blockX && posX - radius < blockX + SIZE && posY + radius > cnv.height - SIZE && posY - radius < cnv.height)
+               ) 
+            {
                 vy = -vy;
             }
-            if (posX + vx > cnv.width ||
-                posX + vx < 0) {
+            if ((posX + vx > cnv.width || posX + vx < 0) ||
+                (posX + radius > blockX && posX - radius < blockX + SIZE && posY + radius > cnv.height - SIZE && posY - radius < cnv.height) 
+               ) 
+            {
                 vx = -vx;    
             }
             
         }
         ///////////////////////////////////////////////////////////////////////////
 
-        //Confere colisão e, em caso de colisão, muda a cor do objeto para vermelho
-        function colide() {
-            if  (posX + radius > blockX		//Confere colisão pela direita 
-                && posX - radius < blockX + SIZE 	//Confere colisão pela esquerda
-                && posY + radius > blockY 	//Confere colisão por cima
-                && posY - radius < blockY + SIZE){	//Confere colisão por baixo
-                    objColor = "#f00";
-            } else {
-                objColor = "#00f";
-            }
-            
-        }
     
         //Entrada de comandos
         //Move o objeto
@@ -157,7 +166,7 @@
                 case DOWN:
                     mvDown = false;
                     break;
-               /*  case LEFT:
+              /*   case LEFT:
                     mvLeft = false;
                     break;
                 case RIGHT:
@@ -165,13 +174,26 @@
                     break; */
             }
         }
+
+        function boxDraw(){
+            if(blockX >=-SIZE ){
+               
+               // blockX--;
+            }
+            if(blockX <= -SIZE)
+                blockX = cnv.width
+            ctx.fillRect(blockX,cnv.height-SIZE,SIZE,SIZE)
+        }
     
         //desenha na tela
         function draw(){
             ctx.clearRect(0,0,cnv.width,cnv.height);
             //muda a cor para preto e desenha no centro da tela
             ctx.fillStyle = "#000";
-            ctx.fillRect(blockX,blockY,SIZE,SIZE);
+            //desenha barreira
+            boxDraw();
+        /*     ctx.fillRect(blockX,blockY,SIZE,SIZE); */
+            
             //Muda a cor do contexto segundo a cor do objeto
             ctx.fillStyle = objColor;
             //DESENHA PERSONA
