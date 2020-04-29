@@ -1,5 +1,5 @@
 const modoDev = process.env.NOVE_ENV !== 'production';
-const webpack = require('webpack');
+//const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -11,7 +11,11 @@ module.exports = {
         filename: 'principal.js',
         path: __dirname + '/public' // default cria diretorio dist/main.js
     },
-    optimization: {
+    devServer: {
+        contentBase: "./public",    //vai servir o diretório public
+        port: 9000
+    },
+    optimization: { 
         minimizer: [
             new UglifyJsPlugin({
                 cache: true,
@@ -32,8 +36,11 @@ module.exports = {
                 MiniCssExtractPlugin.loader, // extrai arquivo css para arquivo .css
                 //'style-loader', //Adiciona CSS ao DOM injetando a tag <style>
                 'css-loader',    //interpreta @import, url()...
-                'sass-loader',
+                'sass-loader',  // packages
             ]
+        }, {
+            test: /\.(png|svg|jpg|gif)$/,   // Regex arquivo imagem
+            use: ['file-loader']    //package 
         }]
     }
 }
