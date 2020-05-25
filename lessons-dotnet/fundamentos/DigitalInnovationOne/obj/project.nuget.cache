@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tYAAGoBN7EwaXX+AHyTjeVTlmjGLwU/oJ3kXATJwnj7nr8luLJcoGVqeuzqEK91I2UWjO/V0BRSC7WzVyVlfSg==",
+  "success": true,
+  "projectFilePath": "/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/DigitalInnovationOne.csproj",
+  "expectedPackageFiles": [
+    "/home/warlock/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.2/microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

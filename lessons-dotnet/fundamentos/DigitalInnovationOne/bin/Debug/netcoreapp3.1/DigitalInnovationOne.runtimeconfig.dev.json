@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/warlock/.dotnet/store/|arch|/|tfm|",
+      "/home/warlock/.nuget/packages"
+    ]
+  }
+}

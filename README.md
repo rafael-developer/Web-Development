@@ -1,7 +1,7 @@
-# Web Development
+# Full Stack Developer
   ## Front-end
-   HTML5, CSS3, Bootstrap, Javascript, jQuery
+   HTML5, CSS3, Bootstrap, Javascript, jQuery, React, Angular
   ## Back-end
-   NodeJs
+   NodeJs, C#, .Net
   ## Data-Base
    MySQL Server, MongoDB

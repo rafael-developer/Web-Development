@@ -1,0 +1,13 @@
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/bin/Debug/netcoreapp3.1/DigitalInnovationOne
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/bin/Debug/netcoreapp3.1/DigitalInnovationOne.deps.json
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/bin/Debug/netcoreapp3.1/DigitalInnovationOne.runtimeconfig.json
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/bin/Debug/netcoreapp3.1/DigitalInnovationOne.runtimeconfig.dev.json
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/bin/Debug/netcoreapp3.1/DigitalInnovationOne.dll
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/bin/Debug/netcoreapp3.1/DigitalInnovationOne.pdb
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/obj/Debug/netcoreapp3.1/DigitalInnovationOne.csprojAssemblyReference.cache
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/obj/Debug/netcoreapp3.1/DigitalInnovationOne.AssemblyInfoInputs.cache
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/obj/Debug/netcoreapp3.1/DigitalInnovationOne.AssemblyInfo.cs
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/obj/Debug/netcoreapp3.1/DigitalInnovationOne.csproj.CoreCompileInputs.cache
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/obj/Debug/netcoreapp3.1/DigitalInnovationOne.dll
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/obj/Debug/netcoreapp3.1/DigitalInnovationOne.pdb
+/home/warlock/projetos-Github/Web-Development/lessons-dotnet/fundamentos/DigitalInnovationOne/obj/Debug/netcoreapp3.1/DigitalInnovationOne.genruntimeconfig.cache

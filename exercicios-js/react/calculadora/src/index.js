@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './main/Calculator';
+import Calculator from './main/Calculator';
 import * as serviceWorker from './serviceWorker';
 
 //import Calculator from './main/Calculator.jsx';
@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
     <div>
       <h1>CALCULADORA</h1>
-      <App />
+      <Calculator />
     </div>
   ,document.getElementById('root')
 );
