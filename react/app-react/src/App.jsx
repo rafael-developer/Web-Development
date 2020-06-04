@@ -13,12 +13,16 @@ import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInto from './components/condicional/UsuarioInto'
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from './components/comunicacao/Input'
 
 export default function () {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+            <Card titulo="11 - Desafio Input" color="#8f8f95">
+                    <Input />
+                </Card>
             <Card titulo="10 - Desafio Comunicação Indireta" color="#8bad39">
                     <IndiretaPai></IndiretaPai>
                 </Card>
