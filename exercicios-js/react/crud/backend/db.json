@@ -1,11 +1,14 @@
 {
-    "users": [{
-        "id": 1,
-        "name": "Arthur Oliveira",
-        "email": "aolive@gmail.com"
-    }, {
-        "id": 2,
-        "name": "Fulano da Silva",
-        "email": "fulano_da_silva@gmail.com"
-    }]
+  "users": [
+    {
+      "name": "Rafael",
+      "email": "suporte@rafael.com",
+      "id": 3
+    },
+    {
+      "name": "malu",
+      "email": "malu@gamil.com",
+      "id": 4
+    }
+  ]
 }
