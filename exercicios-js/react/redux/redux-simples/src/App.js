@@ -24,6 +24,9 @@ const [max, setMax] = useState(10)
         <Soma min={min} max={max} ></Soma>
         <Sorteio min={min} max={max} ></Sorteio>
       </div>
+      <div className="area">
+        <div className="box"></div>
+      </div>
     </div>
   );
 }
