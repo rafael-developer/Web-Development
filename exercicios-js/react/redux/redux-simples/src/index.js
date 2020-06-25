@@ -4,10 +4,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { Provider } from 'react-redux'
+import storeConfig from './store/storeConfig'
+
+/* Cria o estado e armazena em uma constante */
+const store = storeConfig()
+
 ReactDOM.render(
+  /* o componente Provider é quem vai prover os estados da aplicação no topo da Virtual DOM */
+  <Provider store={store}>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 

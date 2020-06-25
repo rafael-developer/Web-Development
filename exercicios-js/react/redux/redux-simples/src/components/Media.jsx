@@ -1,10 +1,11 @@
 import React from 'react'
-
+import { connect } from 'react-redux'
+/* connect é um decorator */
 import Card from './Card'
 
-export default props => {
+const Media = props => {
 
-    const { min, max } = props
+    const { min, max } = props.numeros
 
     return (
         <Card title="Média dos Números" Green>
@@ -17,3 +18,16 @@ export default props => {
         </Card>
     )
 }
+/* mapei estado para as propriedades */
+function mapStateToProps(state) {
+    return {
+        /* ou assim
+        min: state.numeros.min,
+        max: state.numeros.max 
+        */
+
+        numeros: state.numeros
+    }
+}
+
+export default connect(mapStateToProps)(Media)
